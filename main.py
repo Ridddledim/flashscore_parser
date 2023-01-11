@@ -62,7 +62,7 @@ def main(bot):
 
             bot_soups = new_bot_soups(bot, _id)
             data_to_db = union_parse_pages(*bot_soups)
-            data_to_db.update({'myscore_id': _id})
+            data_to_db.update({'flashscore_id': _id})
             append_data_to_file(bot.crawled_file, _id)
 
             logger.info('crawl_url: \n{}, \n{}'.format(*url_mask(_id)))

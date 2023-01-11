@@ -8,8 +8,8 @@ def get_current_project_folder(url):
     return ''.join(regex.findall(url)).replace('-', '_')
 
 # -------change param-------------
-# mask 'https://www.myscore.ua/soccer/{some-info}/{some-info}/results/'
-START_URL = 'https://www.myscore.ua/soccer/england/premier-league-2015-2016/results/'
+# mask 'https://www.flashscore.ua/soccer/{some-info}/{some-info}/results/'
+START_URL = 'https://www.flashscore.ua/soccer/england/premier-league-2015-2016/results/'
 DEMO_LEN = lambda x: x[:4]  # parse only 4 matches
 BOT_LIVES = 50
 CURRENT_PROJECT_FOLDER = get_current_project_folder(START_URL)
